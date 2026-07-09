@@ -45,14 +45,11 @@ dependencies {
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
     // Carpet mod (required dependency)
-    // ⚠️ VERSION NOTE: Replace with the correct Carpet version for 26.1.2.
-    //    Check https://modrinth.com/mod/carpet/versions for the latest.
-    //    Format: maven.modrinth:carpet:<version>
-    //    Example placeholder below — you MUST verify the exact version.
-    implementation "maven.modrinth:carpet:26.1.2-1.4.147"
+    // Modrinth Maven: project TQTTVgYE = Carpet, version ygtmLbO3 for 26.1.2
+    implementation "maven.modrinth:TQTTVgYE:ygtmLbO3"
 
-    // fabric-permissions-api v0.7.0 (confirmed for 26.1–26.1.2)
-    implementation "maven.modrinth:fabric-permissions-api:0.7.0"
+    // fabric-permissions-api for 26.1.2
+    implementation "maven.modrinth:lzVo0Dll:b1EqjxFs"
 
     // MixinExtras (optional but recommended for advanced mixin features)
     compileOnly "io.github.llamalad7:mixinextras-common:0.4.1"
