@@ -41,6 +41,9 @@ jobs:
           gradle-version: 'wrapper'
           cache-read-only: ${{ github.ref != 'refs/heads/main' }}
 
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+
       - name: Validate Gradle wrapper
         run: ./gradlew --version
 
